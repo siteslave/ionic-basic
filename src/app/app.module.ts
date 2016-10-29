@@ -3,12 +3,14 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AlertPage } from '../pages/alert/alert'
+import { DateTimePage } from '../pages/date-time/date-time'
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    AlertPage
+    AlertPage,
+    DateTimePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -17,7 +19,8 @@ import { AlertPage } from '../pages/alert/alert'
   entryComponents: [
     MyApp,
     HomePage,
-    AlertPage
+    AlertPage,
+    DateTimePage
   ],
   providers: []
 })
