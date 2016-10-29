@@ -4,6 +4,7 @@ import { NavController } from 'ionic-angular';
 
 import { AlertPage } from '../alert/alert'
 import { DateTimePage } from '../date-time/date-time'
+import { ListPage } from '../list/list'
 
 @Component({
   selector: 'page-home',
@@ -21,6 +22,10 @@ export class HomePage {
 
   goDateTime() {
     this.navCtrl.push(DateTimePage);
+  }
+
+  goList() {
+    this.navCtrl.push(ListPage)
   }
 
 }
