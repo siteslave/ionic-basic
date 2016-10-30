@@ -8,6 +8,7 @@ import { ListPage } from '../list/list'
 import { InputSelectPage } from '../input-select/input-select'
 import { LoadingPage } from '../loading/loading'
 import { MainModalPage } from '../main-modal/main-modal'
+import { TabPage } from '../tab/tab'
 
 @Component({
   selector: 'page-home',
@@ -41,5 +42,9 @@ export class HomePage {
 
   goModal() {
     this.navCtrl.push(MainModalPage)
+  }
+
+  goTab() {
+    this.navCtrl.push(TabPage)
   }
 }

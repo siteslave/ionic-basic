@@ -9,6 +9,7 @@ import { InputSelectPage } from '../pages/input-select/input-select'
 import { LoadingPage } from '../pages/loading/loading'
 import { ModalPage } from '../pages/modal-page/modal-page'
 import { MainModalPage } from '../pages/main-modal/main-modal'
+import { TabPage } from '../pages/tab/tab'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MainModalPage } from '../pages/main-modal/main-modal'
     InputSelectPage,
     LoadingPage,
     MainModalPage,
-    ModalPage
+    ModalPage,
+    TabPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -35,7 +37,8 @@ import { MainModalPage } from '../pages/main-modal/main-modal'
     InputSelectPage,
     LoadingPage,
     MainModalPage,
-    ModalPage
+    ModalPage,
+    TabPage
   ],
   providers: []
 })

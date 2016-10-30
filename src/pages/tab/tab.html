@@ -1,0 +1,17 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tab page</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-tabs>
+    <ion-tab tabIcon="apps" tabTitle="Home" tabBadge="3" tabBadgeStyle="danger" [root]="tab1"></ion-tab>
+    <ion-tab tabIcon="contacts" tabTitle="Login" [root]="tab2"></ion-tab>
+  </ion-tabs>
+</ion-content>
