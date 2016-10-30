@@ -7,6 +7,7 @@ import { DateTimePage } from '../date-time/date-time'
 import { ListPage } from '../list/list'
 import { InputSelectPage } from '../input-select/input-select'
 import { LoadingPage } from '../loading/loading'
+import { MainModalPage } from '../main-modal/main-modal'
 
 @Component({
   selector: 'page-home',
@@ -36,5 +37,9 @@ export class HomePage {
 
   goLoading() {
     this.navCtrl.push(LoadingPage)
+  }
+
+  goModal() {
+    this.navCtrl.push(MainModalPage)
   }
 }

@@ -7,6 +7,8 @@ import { DateTimePage } from '../pages/date-time/date-time'
 import { ListPage } from '../pages/list/list'
 import { InputSelectPage } from '../pages/input-select/input-select'
 import { LoadingPage } from '../pages/loading/loading'
+import { ModalPage } from '../pages/modal-page/modal-page'
+import { MainModalPage } from '../pages/main-modal/main-modal'
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LoadingPage } from '../pages/loading/loading'
     DateTimePage,
     ListPage,
     InputSelectPage,
-    LoadingPage
+    LoadingPage,
+    MainModalPage,
+    ModalPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -29,7 +33,9 @@ import { LoadingPage } from '../pages/loading/loading'
     DateTimePage,
     ListPage,
     InputSelectPage,
-    LoadingPage
+    LoadingPage,
+    MainModalPage,
+    ModalPage
   ],
   providers: []
 })
