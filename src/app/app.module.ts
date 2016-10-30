@@ -5,6 +5,8 @@ import { HomePage } from '../pages/home/home';
 import { AlertPage } from '../pages/alert/alert'
 import { DateTimePage } from '../pages/date-time/date-time'
 import { ListPage } from '../pages/list/list'
+import { InputSelectPage } from '../pages/input-select/input-select'
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,8 @@ import { ListPage } from '../pages/list/list'
     HomePage,
     AlertPage,
     DateTimePage,
-    ListPage
+    ListPage,
+    InputSelectPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,7 +26,8 @@ import { ListPage } from '../pages/list/list'
     HomePage,
     AlertPage,
     DateTimePage,
-    ListPage
+    ListPage,
+    InputSelectPage
   ],
   providers: []
 })

@@ -1,0 +1,38 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Input-Select</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Group</ion-label>
+      <ion-select [(ngModel)]="groupId" (ionChange)="getUsers($event)">
+        <ion-option [value]="group.id" *ngFor="let group of groups">{{ group.name }} </ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Login as</ion-label>
+      <ion-select multiple="true" [(ngModel)]="loginAs">
+        <ion-option [value]="user.name" *ngFor="let user of users">{{ user.name }} </ion-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button full (click)="login()">Login</button>
+
+</ion-content>
