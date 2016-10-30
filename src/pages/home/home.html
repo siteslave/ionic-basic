@@ -1,8 +1,9 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -13,4 +14,6 @@
   <button ion-button (click)="goInputSelect()">Input-Select</button>
   <button ion-button (click)="goLoading()">Loading</button>
   <button ion-button (click)="goModal()">Modal</button>
+
+  <button ion-button menuToggle>Toggle Menu</button>
 </ion-content>
