@@ -6,6 +6,7 @@ import { AlertPage } from '../alert/alert'
 import { DateTimePage } from '../date-time/date-time'
 import { ListPage } from '../list/list'
 import { InputSelectPage } from '../input-select/input-select'
+import { LoadingPage } from '../loading/loading'
 
 @Component({
   selector: 'page-home',
@@ -33,4 +34,7 @@ export class HomePage {
     this.navCtrl.push(InputSelectPage)
   }
 
+  goLoading() {
+    this.navCtrl.push(LoadingPage)
+  }
 }

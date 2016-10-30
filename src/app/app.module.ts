@@ -6,7 +6,7 @@ import { AlertPage } from '../pages/alert/alert'
 import { DateTimePage } from '../pages/date-time/date-time'
 import { ListPage } from '../pages/list/list'
 import { InputSelectPage } from '../pages/input-select/input-select'
-
+import { LoadingPage } from '../pages/loading/loading'
 
 @NgModule({
   declarations: [
@@ -15,7 +15,8 @@ import { InputSelectPage } from '../pages/input-select/input-select'
     AlertPage,
     DateTimePage,
     ListPage,
-    InputSelectPage
+    InputSelectPage,
+    LoadingPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -27,7 +28,8 @@ import { InputSelectPage } from '../pages/input-select/input-select'
     AlertPage,
     DateTimePage,
     ListPage,
-    InputSelectPage
+    InputSelectPage,
+    LoadingPage
   ],
   providers: []
 })
