@@ -9,7 +9,7 @@ import { InputSelectPage } from '../input-select/input-select'
 import { LoadingPage } from '../loading/loading'
 import { MainModalPage } from '../main-modal/main-modal'
 import { TabPage } from '../tab/tab'
-
+import { UsersPage } from '../users/users'
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -46,5 +46,9 @@ export class HomePage {
 
   goTab() {
     this.navCtrl.push(TabPage)
+  }
+
+  goUsers() {
+    this.navCtrl.push(UsersPage)
   }
 }

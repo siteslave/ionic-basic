@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Description
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span color="primary" showWhen="ios">Close</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      Fullname
+      <ion-note item-right>{{user.name}}</ion-note>
+    </ion-item>
+    <ion-item>
+      Username
+      <ion-note item-right>{{user.id}}</ion-note>
+    </ion-item>
+    <ion-item>
+      Email
+      <ion-note item-right>{{user.email}}</ion-note>
+    </ion-item>
+  </ion-list>
+  <button ion-button icon-left color="danger" (click)="remove()">
+    <ion-icon name="trash"></ion-icon>
+    REMOVE
+  </button>
+  <button ion-button icon-left color="secondary" (click)="showEdit()">
+    <ion-icon name="create"></ion-icon>
+    EDIT
+  </button>
+</ion-content>

@@ -10,6 +10,11 @@ import { LoadingPage } from '../pages/loading/loading'
 import { ModalPage } from '../pages/modal-page/modal-page'
 import { MainModalPage } from '../pages/main-modal/main-modal'
 import { TabPage } from '../pages/tab/tab'
+import { UsersPage } from '../pages/users/users'
+import { UsersInfoPage } from '../pages/users-info/users-info'
+import { UsersNewPage } from '../pages/users-new/users-new'
+import { UsersEditPage } from '../pages/users-edit/users-edit'
+import { Users } from '../providers/users'
 
 @NgModule({
   declarations: [
@@ -22,7 +27,11 @@ import { TabPage } from '../pages/tab/tab'
     LoadingPage,
     MainModalPage,
     ModalPage,
-    TabPage
+    TabPage,
+    UsersPage,
+    UsersInfoPage,
+    UsersNewPage,
+    UsersEditPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -38,8 +47,15 @@ import { TabPage } from '../pages/tab/tab'
     LoadingPage,
     MainModalPage,
     ModalPage,
-    TabPage
+    TabPage,
+    UsersPage,
+    UsersInfoPage,
+    UsersNewPage,
+    UsersEditPage
   ],
-  providers: []
+  providers: [
+    Users,
+    { provide: 'REST_URL', useValue: 'http://localhost:3000' }
+  ]
 })
 export class AppModule {}

@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Description
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="newUser()">
+        <ion-icon name="person-add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>Users list</ion-list-header>
+    <button ion-item *ngFor="let user of allUsers" (click)="info(user)">
+      {{ user.name }}
+      <ion-note item-right>{{ user.email }}</ion-note>
+    </button>
+  </ion-list>
+</ion-content>
