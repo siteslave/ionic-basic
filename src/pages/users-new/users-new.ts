@@ -34,7 +34,6 @@ export class UsersNewPage implements OnInit {
   };  
 
   save() {
-    this.user.id = this.user.username;
     console.log(this.user)
     if (this.user.username && this.user.email && this.user.name && this.user.group_id) {
       this.users.save(this.user)

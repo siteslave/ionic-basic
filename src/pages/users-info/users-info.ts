@@ -28,8 +28,7 @@ export class UsersInfoPage {
   }
 
   ionViewDidLoad() {
-    console.log(this.user)
-    console.log('Hello UsersInfo Page');
+    console.log(this.user);
   }
 
   dismiss() {

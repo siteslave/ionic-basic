@@ -47,8 +47,8 @@ export class Users {
 
   }
 
-  remove(username: string) {
-    let url = `${this.url}/users/${username}`
+  remove(id: string) {
+    let url = `${this.url}/users/${id}`
 
     return new Promise((resolve, reject) => {
       let headers = new Headers({ 'Content-Type': 'application/json' });
@@ -72,7 +72,6 @@ export class Users {
       let headers = new Headers({ 'Content-Type': 'application/json' });
       let options = new RequestOptions({ headers: headers });
       let body = {
-        id: user.username,
         username: user.username,
         name: user.name,
         email: user.email,
@@ -98,6 +97,7 @@ export class Users {
       let options = new RequestOptions({ headers: headers });
     
       let body = {
+        id: user.id,
         username: user.username,
         name: user.name,
         email: user.email,

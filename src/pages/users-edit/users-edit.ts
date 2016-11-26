@@ -15,7 +15,7 @@ export class UsersEditPage implements OnInit {
     public navParams: NavParams
   ) {
     let _user = <IUser>this.navParams.get('user');
-    this.user = { id: _user.id, username: _user.id, name: _user.name, email: _user.email, group_id: _user.group_id}
+    this.user = { id: _user.id, username: _user.username, name: _user.name, email: _user.email, group_id: _user.group_id}
 
     console.log(this.user)
    }
@@ -38,7 +38,7 @@ export class UsersEditPage implements OnInit {
   };  
 
   save() {
-    this.user.id = this.user.username;
+    this.user.id = this.user.id;
     console.log(this.user)
     if (this.user.username && this.user.email && this.user.name && this.user.group_id) {
       this.users.update(this.user)
