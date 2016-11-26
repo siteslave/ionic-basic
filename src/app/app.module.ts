@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { NgModule, ErrorHandler } from '@angular/core';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AlertPage } from '../pages/alert/alert'
@@ -54,6 +54,7 @@ import { Users } from '../providers/users'
     UsersEditPage
   ],
   providers: [
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
     Users,
     { provide: 'REST_URL', useValue: 'http://localhost:3000' }
   ]
